@@ -13,12 +13,12 @@
 <body>
 
  <header class="header-background parallax">
-    <div class="header-build-text">
+  <div class="header-build-text">
    <h1>Bariloche Modern Apartments
     <br>
     Patagonia - Argentina
    </h1>
-    </div>
+  </div>
 </header>
 
 
@@ -59,6 +59,23 @@ window.addEventListener('scroll', function() {
 });
 
 </script>
+
+ <!-- Hide header-build-text when off the header  -->
+
+ <script>
+
+document.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+    let headerText = document.querySelector('.header-build-text h1');
+
+    if (scrollPosition > 400) {
+        headerText.style.color = 'transparent';
+    } else {
+        headerText.style.color = '#FFFFFF';
+    }
+});
+
+ </script>
 
 <!-- Change background color - testimonials section  -->
 
