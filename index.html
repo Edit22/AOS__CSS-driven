@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS__CSS_driven</title>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header class="header-background parallax">
+    <div class="header-build-text">
+   <h1>Bariloche Modern Apartments
+    <br>
+    Patagonia - Argentina
+   </h1>
+    </div>
+</header>
+
+
+<section class="image-container">
+    <div class="image-container-images>">
+    <div class="image-white" data-aos="fade-up" data-aos-duration="1500"><h2>Bariloche Modern Apartments</h2></div>
+    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
+    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
+    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
+    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
+    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
+    </div>
+</section>
+
+<section class="testimonials">
+<div class="testimonials-container" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+    <p class="testimonials-exapmle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit hic quis facilis voluptatem accusantium magni nulla inventore, modi exercitationem totam molestiae tempora! Reprehenderit enim quo voluptate, omnis a facere quas?</p>
+</div>
+<div class="testimonials-reviews" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+    <h3>Reviews</h3>
+    <br>
+    <a class="review-link" href="" title="Show all reviews of Bariloche Modern Apartments">
+        <span>Show all</span>
+    </a>
+</div>
+</section>
+
+  <!-- Cover header image when scroll  -->
+<script>
+
+window.addEventListener('scroll', function() {
+    // Get the scroll position
+    let scrollPosition = window.scrollY;
+
+    // Set the translateY property of headerContent based on the scroll position
+    document.querySelector('.image-container').style.bottom = scrollPosition + 'px';
+
+});
+
+</script>
+
+<!-- Change background color - testimonials section  -->
+
+<script>
+
+document.addEventListener('scroll', function() {
+    let scrollPosition = window.scrollY;
+    let lastSquare = document.querySelector('.image-container');
+    let testimonials = document.querySelector('.testimonials');
+    let textColor = document.querySelector('.testimonials-exapmle');
+
+    if (scrollPosition > 2300) {
+        lastSquare.style.backgroundColor = '#CF3E29';
+        testimonials.style.backgroundColor ='#CF3E29';
+        textColor.style.color = '#FFFFFF';
+    } else {
+        lastSquare.style.backgroundColor = '#FFFFFF';
+        testimonials.style.backgroundColor = '#FFFFFF';
+        textColor.style.color = '#000000';
+    }
+});
+
+</script>
+
+
+<!-- AOS  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
