@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AOS__CSS_driven</title>
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7703e00e5d.js" crossorigin="anonymous"></script>
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
@@ -14,7 +19,7 @@
 
  <header class="header-background parallax">
   <div class="header-build-text">
-   <h1>Our Hotel Name
+   <h1>Hotel Name
     <br>
     Town - Country
    </h1>
@@ -24,11 +29,9 @@
 
 <section class="image-container">
     <div class="image-container-images>">
-    <div class="image-white" data-aos="fade-up" data-aos-duration="1500"><h2>Our Hotel Name</h2></div>
+    <div class="image-white" data-aos="fade-up" data-aos-duration="1500"><h2>Hotel Name</h2></div>
     <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
-    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
-    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
-    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
+    <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>    
     <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
     </div>
 </section>
@@ -70,7 +73,7 @@
         <div class="preFooterCol">
             <a href="#" class="preFooterLink" target title="third">
                 <span class="title mainFontBold fontSizeH4">Social media</span>
-                <span class="text mainFontLight fontSizeBody">Follow Our Hotel Name on social media. We are looking forward to your posts @ourhotelname.</span>
+                <span class="text mainFontLight fontSizeBody">Follow Our Hotel Name on social media. We are looking forward to your posts<br>@ourhotelname.</span>
                 <!-- <svg></svg> -->
             </a>
         </div>
@@ -80,7 +83,56 @@
 
    <div class="footer">
     <div class="wrapper-footer-paddingHalf">
+        <div class="top">
+            <div class="footerCol">
+                <div class="title altFontRegular fontSizeH5">Contact</div>
+                <a class="footerLink mainFontRegular fontSizeFooter">Our Hotel Name</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Street Name and number</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Country - City/Town Name</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Phone +1234567890</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">ourmail@ourmail.com</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Contact form</a>
+            </div>
 
+            <div class="awardWrapper">
+                <div class="awards-wrapper">
+                    <img src="images/footer-link1.png" alt="winner quality hotel award">
+                </div>
+                <div class="awards-wrapper">
+                    <img src="images/footer-link2.png" alt="responsible tourism award">
+                </div>
+            </div>
+        
+        
+            <div class="footerCol">
+                <div class="title altFontRegular fontSizeH5">About us</div>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Contacts</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Carreer & Jobs</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">History</a>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Media</a>
+            </div>
+
+            <div class="footerCol">
+                <div class="title altFontRegular fontSizeH5">Online Shop</div>
+                <a class="footerLink mainFontRegular fontSizeFooter" href="#">Vouchers</a>
+            </div>
+        </div>
+
+        <div class="socialBtns">
+            <a class="socialBtnLink facebook" href="#" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="socialBtnLink instagram" href="#" title="Instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="socialBtnLink youtube" href="#" title="YouTube" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="bottom">
+            <a href="#" class="footerLink mainFontRegular fontSizeFooter" target title="Privacy policy">
+                <span class="link">Privacy policy</span>
+            </a>
+        </div>
+
+        <a href="#top" class="goToTop"></a>
     </div>
    </div>
 
@@ -128,7 +180,7 @@ document.addEventListener('scroll', function() {
     let testimonials = document.querySelector('.testimonials');
     let textColor = document.querySelector('.testimonials-exapmle');
 
-    if (scrollPosition > 2300) {
+    if (scrollPosition > 1600) {
         lastSquare.style.backgroundColor = '#1f3250';
         testimonials.style.backgroundColor ='#1f3250';
         textColor.style.color = '#FFFFFF';
