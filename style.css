@@ -56,6 +56,32 @@ body {
     transform: rotate(-45deg);
 }
 
+/* Habburger button  */
+
+.hamburger-button {
+    position: absolute;
+    left: 15px;
+    align-items: center;
+}
+
+.fa-bars {
+    display: block;
+    font-size: 28px;
+    color: rgb(31, 50, 80);
+}
+
+.fa-times {
+    display: none;
+}
+
+.hamburger-button:hover {
+    cursor: pointer;
+}
+
+/* .hamburger-mobile-drawer {
+
+} */
+
 
 /* Header - Paralax  */
 
