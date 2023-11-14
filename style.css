@@ -34,6 +34,7 @@ body {
     object-fit: cover;
 }
 
+
 .bookNowLink {
     position: absolute;
     transform: rotate(45deg);
@@ -46,7 +47,10 @@ body {
     text-transform: uppercase;
     line-height: 15px;
     text-align: center;
+    transition: opacity 2s ease-out;
 }
+
+
 
 .bookNowLinkInner  {
     display: flex;
@@ -60,27 +64,39 @@ body {
 
 .hamburger-button {
     position: absolute;
+    font-size: 28px;
+    color: rgb(31, 50, 80);
     left: 15px;
     align-items: center;
 }
 
-.fa-bars {
-    display: block;
-    font-size: 28px;
-    color: rgb(31, 50, 80);
+.fa {
+     display: none;
 }
 
-.fa-times {
-    display: none;
+.show {
+    display: block;
 }
 
 .hamburger-button:hover {
     cursor: pointer;
 }
 
-/* .hamburger-mobile-drawer {
+.hamburger-mobile-drawer {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 330px;
+    height: 86vh;
+    background-color: rgb(238, 237, 234);
+    transition: opacity 2s ease-out;
+}
 
-} */
+.hamburger-mobile-drawer.show {
+    display: block;
+} 
 
 
 /* Header - Paralax  */
@@ -89,13 +105,14 @@ body {
     position: fixed;
     width: 100%;
     max-width: 90%;
+    bottom: 150px;
     left: 50%;
     transform: translate(-50%);
     text-align: center;  
 }
 
 .header-build-text h1 {
-    font-size: 30px;
+    font-size: 25px;
     color: white;
     transition: color 0.6s ease;
 }
@@ -150,7 +167,7 @@ body {
     width: 260px;
     height: 100px;
     background-color: white;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
     padding: 20px;
 }
 

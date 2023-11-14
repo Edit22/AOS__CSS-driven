@@ -29,20 +29,20 @@
         <div class="navHamburger">
             <div class="hamburger hamburger--squeeze">
                 <div class = "hamburger-button">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars show"></i>
                     <i class="fa fa-times"></i>
                 </div>
             </div>
-            <div class="hamburger-mobile-drawer"></div>
+            <aside class="hamburger-mobile-drawer"></aside>
         </div>
     </div>
  </header>   
 
  <header class="header-background parallax">
   <div class="header-build-text">
-   <h1>Hotel Name
+   <h1>Bariloche Modern Apartments
     <br>
-    Town - Country
+    Patagonia-Argentina
    </h1>
   </div>
 </header>
@@ -50,7 +50,7 @@
 
 <section class="image-container">
     <div class="image-container-images>">
-    <div class="image-white" data-aos="fade-up" data-aos-duration="1500"><h2>Hotel Name</h2></div>
+    <div class="image-white" data-aos="fade-up" data-aos-duration="1500"><h2>Bariloche Modern Apartments</h2></div>
     <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
     <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>    
     <div class="square-image" data-aos="fade-up" data-aos-duration="1500"></div>
@@ -182,7 +182,7 @@ document.addEventListener('scroll', function() {
     let scrollPosition = window.scrollY;
     let headerText = document.querySelector('.header-build-text h1');
 
-    if (scrollPosition > 400) {
+    if (scrollPosition > 250) {
         headerText.style.color = 'transparent';
     } else {
         headerText.style.color = '#FFFFFF';
@@ -220,5 +220,7 @@ document.addEventListener('scroll', function() {
     <script>
       AOS.init();
     </script>
+
+    <script src="script.js"></script>
 </body>
 </html>
