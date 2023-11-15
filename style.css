@@ -47,7 +47,6 @@ body {
     text-transform: uppercase;
     line-height: 15px;
     text-align: center;
-    transition: opacity 2s ease-out;
 }
 
 
@@ -68,6 +67,7 @@ body {
     color: rgb(31, 50, 80);
     left: 15px;
     align-items: center;
+
 }
 
 .fa {
@@ -91,12 +91,27 @@ body {
     width: 330px;
     height: 86vh;
     background-color: rgb(238, 237, 234);
-    transition: opacity 2s ease-out;
+    transition: opacity 2s ease-in-out;
 }
+
+/* Mobile drawer  */
 
 .hamburger-mobile-drawer.show {
     display: block;
 } 
+
+.hamburger-mobile-drawer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile-drawer-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
 
 /* Header - Paralax  */
