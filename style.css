@@ -13,6 +13,7 @@ body {
     width: calc(100% - 30px);
     height: 14%;
     background-color: white;
+    border-bottom: 1px solid #9B7250;
 }
 
 .wrapper {
@@ -59,7 +60,7 @@ body {
     transform: rotate(-45deg);
 }
 
-/* Habburger button  */
+/* Hamburger button  */
 
 .hamburger-button {
     position: absolute;
@@ -92,6 +93,9 @@ body {
     height: 86vh;
     background-color: rgb(238, 237, 234);
     transition: opacity 2s ease-in-out;
+    overflow-y: auto;
+    border-top: 1px solid #9B7250;
+
 }
 
 /* Mobile drawer  */
@@ -107,10 +111,104 @@ body {
     flex-direction: column;
 }
 
-.mobile-drawer-wrapper {
+/* Mobile Drawer Navigation Link  */
+
+
+.mobile-drawer-navigation {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+}
+
+.navigationLink {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mobile-drawer-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(31, 50, 80);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Mobile Drawer Navigation Col  */
+
+.mobile-drawer-navigation-col {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.mobile-drawer-navigation-col a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;;
+    color: rgb(31, 50, 80);
+}
+
+.navigation-col {
+    border-top: 1px solid #CDCFD1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navigation-col:last-child {
+    border-bottom: 1px solid #CDCFD1;
+    padding-top: 20px;
+}
+
+.mobile-drawer-navigation-col .subMobileNavigationTrigger {
+    position: absolute;
+    right: 35px;
+    color: rgb(31, 50, 80);
+    font-size: 20px;
+}
+
+
+/* Navigation Social buttons  */
+
+.navigation-socialBtns {
+    display: flex;
+    justify-content: left;
+    margin-top: 30px;
+    margin-left: 15px;
+    opacity: 0.9;
+}
+
+.navigation-socialBtnLink {
+    text-decoration: none;
+    color: rgb(31, 50, 80);
+    font-size: 35px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+/* Address */
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 15px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.address :first-child {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.address a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(31, 50, 80);
+
 }
 
 
