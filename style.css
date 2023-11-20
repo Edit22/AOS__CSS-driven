@@ -136,7 +136,7 @@ body {
 
 /* Mobile Drawer Navigation Col  */
 
-.mobile-drawer-navigation-col {
+.mobile-drawer-navigation-col, .mobile-navigation-col-inactive {
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -144,17 +144,24 @@ body {
     padding-right: 15px;
 }
 
-.mobile-drawer-navigation-col a {
+.mobile-drawer-navigation-col a,
+.mobile-navigation-col-inactive a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;;
     color: rgb(31, 50, 80);
+    padding-left: 30px;
 }
 
-.navigation-col {
+.navigation-col, .navigation-col-inactive {
     border-top: 1px solid #CDCFD1;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.navigation-col-inactive .fas {
+    position: absolute;
+    left: 30px;
 }
 
 .navigation-col:last-child {
