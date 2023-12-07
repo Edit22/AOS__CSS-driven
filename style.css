@@ -153,6 +153,12 @@ body {
     padding-left: 30px;
 }
 
+.mobile-navigation-col-inactive a:before {
+    content: '\003E';
+    margin-right: 15px;
+    font-size: 15px;
+}
+
 .navigation-col, .navigation-col-inactive {
     border-top: 1px solid #CDCFD1;
     padding-bottom: 20px;
@@ -281,13 +287,35 @@ body {
     transition: background-color 0.6s ease;
 }
 
-.square-image {
-    background-image: url(images/6.png);
+.square-image1,
+.square-image2,
+.square-image3 {
+    position: relative;
     background-size: cover;
     width: 260px;
     height: 260px;
     margin-bottom: 25px;
     padding: 20px;
+}
+
+.square-image1 {
+    background-image: url(images/6.png);
+
+}
+
+.square-image2 {
+    background-image: url(images/4.png);
+}
+
+.square-image3 {
+    background-image: url(images/5.png);
+}
+
+.square-image-description {
+    position: absolute;
+    color: white;
+    top: 250px;
+    left: 10px;
 }
 
 
