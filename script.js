@@ -20,3 +20,20 @@ btn.addEventListener('click', function() {
 
 });
 
+//  Mobile navigation col inactive - display ACCORDION MENU 
+
+const navigationCols = document.querySelectorAll('.navigation-col');
+
+navigationCols.forEach(navigationCol => {
+    navigationCol.addEventListener('click', event => {
+        navigationCol.classList.toggle('active');
+        const mobileNavigationInactive = navigationCol.nextElementSibling;
+
+        if (navigationCol.classList.contains('active')) {
+            mobileNavigationInactive.style.maxHeight = mobileNavigationInactive.scrollHeight + "px";
+        } else {
+            mobileNavigationInactive.style.maxHeight = 0;
+        }
+    });
+});
+

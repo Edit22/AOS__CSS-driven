@@ -159,6 +159,14 @@ body {
     padding-top: 20px;
 }
 
+.mobile-navigation-col-inactive {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
 .navigation-col-inactive .fas {
     position: absolute;
     left: 30px;
