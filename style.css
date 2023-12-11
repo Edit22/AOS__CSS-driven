@@ -60,6 +60,38 @@ body {
     transform: rotate(-45deg);
 }
 
+@media (min-width: 600px) {
+    .bookNowLink {
+        right: 70px;
+        top: 66px;
+        padding: 33px 26px;
+        font-size: 20px;
+        line-height: 21px;
+    }  
+    
+    .logoImage-container {
+    width: 240px;
+    }
+}
+
+@media (min-width: 800px) {
+    .bookNowLink {
+        right: 150px;
+    }  
+    .logoImage-container {
+    width: 280px;
+    }  
+}
+
+@media (min-width: 1090px) {
+    .bookNowLink {
+        right: 200px;
+    }  
+    .logoImage-container {
+    width: 320px;
+    }  
+}
+
 /* Hamburger button  */
 
 .hamburger-button {
@@ -98,6 +130,12 @@ body {
 
 }
 
+@media (min-width: 360px) {
+    .hamburger-mobile-drawer {
+    width: 98%;
+    }
+}
+
 /* Mobile drawer  */
 
 .hamburger-mobile-drawer.show {
@@ -110,6 +148,7 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+
 
 /* Mobile Drawer Navigation Link  */
 
@@ -132,6 +171,18 @@ body {
     color:rgb(31, 50, 80);
     font-size: 15px;
     font-weight: bold;
+}
+
+@media (min-width: 760px) {
+    .mobile-drawer-navigation {
+       display: grid;
+       grid-template-columns: repeat(6, 1fr);
+      width: 95%;
+      padding: 5px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      max-width: 1090px;
+    }
 }
 
 /* Mobile Drawer Navigation Col  */
@@ -189,6 +240,7 @@ body {
     color: rgb(31, 50, 80);
     font-size: 20px;
 }
+
 
 
 /* Navigation Social buttons  */
@@ -272,6 +324,12 @@ body {
     background-image: url(images/header-generalView.png);
 }
 
+@media (min-width: 700px) {
+    .parallax {
+    background-image: url(images/header-desktopView.png);
+}
+}
+
 .image-container {
     display: flex;
     align-items: center;
@@ -333,6 +391,7 @@ body {
     font-size: 25px;
     text-align: center;
 }
+
 
 /* Testimonials  */
 
@@ -433,6 +492,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.awards-wrapper {
+    transition: transform 0.3s ease;
+}
+
+.award-wrapper:hover {
+    transform: rotate(20deg);
 }
 
 .awards-wrapper img {
