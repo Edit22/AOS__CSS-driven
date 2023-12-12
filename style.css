@@ -259,6 +259,12 @@ body {
     font-size: 35px;
     margin-right: 20px;
     margin-bottom: 15px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.navigation-socialBtnLink:hover {
+    color:#9B7250;
+    transform: scale(1.1);
 }
 
 /* Address */
@@ -330,6 +336,8 @@ body {
 }
 }
 
+/* Image/packages squares  */
+
 .image-container {
     display: flex;
     align-items: center;
@@ -344,6 +352,7 @@ body {
     height: 300px;
     transition: background-color 0.6s ease;
 }
+
 
 .square-image1,
 .square-image2,
@@ -498,8 +507,8 @@ body {
     transition: transform 0.3s ease;
 }
 
-.award-wrapper:hover {
-    transform: rotate(20deg);
+.awardWrapper:hover .awards-wrapper:first-child {
+    transform: rotate(30deg);
 }
 
 .awards-wrapper img {
@@ -556,6 +565,12 @@ body {
     font-size: 35px;
     margin-right: 20px;
     margin-bottom: 15px;
+    transition: transform 0.8s ease-in-out;
+}
+
+.socialBtnLink:hover {
+    color:#9B7250;
+    transform: scale(1.1);
 }
 
 .divider {
