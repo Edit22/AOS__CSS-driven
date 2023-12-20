@@ -48,6 +48,7 @@ body {
     text-transform: uppercase;
     line-height: 15px;
     text-align: center;
+   
 }
 
 
@@ -107,15 +108,61 @@ body {
      display: none;
 }
 
-.show {
-    display: block;
-}
 
 .hamburger-button:hover {
     cursor: pointer;
 }
 
-.hamburger-mobile-drawer {
+.bookNowLink {
+    border: none;
+}
+
+.book-now-drawer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 40px;
+    gap: 60px;    
+}
+
+.book-now-link h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color:rgb(31, 50, 80);
+}
+
+.book-now-link a {
+    text-decoration: none;
+    color:rgb(31, 50, 80);
+    padding-left: 20px;
+}
+
+.book-now-link i, .book-now-close-button {
+    color:rgb(31, 50, 80);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-now-close-button i {
+    padding-right: 20px;
+}
+
+
+.book-now-close-button:hover {
+    transform: scale(1.1);
+}
+
+.bookNowLinkInner:hover {
+    color: rgb(31, 50, 80);
+}
+
+.book-now-close-button {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+}
+
+.hamburger-mobile-drawer, .book-now-drawer {
     display: none;
     position: fixed;
     bottom: 0;
@@ -124,7 +171,7 @@ body {
     width: 330px;
     height: 86vh;
     background-color: rgb(238, 237, 234);
-    transition: opacity 2s ease-in-out;
+    transition: opacity 3s ease-in-out;
     overflow-y: auto;
     border-top: 1px solid #9B7250;
 
@@ -137,8 +184,11 @@ body {
 }
 
 /* Mobile drawer  */
+.show {
+    display: block;
+}
 
-.hamburger-mobile-drawer.show {
+.hamburger-mobile-drawer.show, .book-now-drawer.show {
     display: block;
 } 
 
@@ -177,11 +227,11 @@ body {
     .mobile-drawer-navigation {
        display: grid;
        grid-template-columns: repeat(6, 1fr);
-      width: 95%;
+      width: 75%;
       padding: 5px;
       margin-top: 40px;
       margin-bottom: 40px;
-      max-width: 1090px;
+      max-width: 800px;
     }
 }
 
@@ -429,7 +479,7 @@ body {
 .testimonials-example-personName {
     margin-top: 40px;
     font-size: 18px;
-    color: #9B7250;
+    color: rgb(155, 114, 80);
 }
 
 .testimonials-reviews {
