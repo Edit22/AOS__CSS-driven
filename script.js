@@ -26,12 +26,14 @@ btn.addEventListener('click', function() {
 const bookBtn = document.querySelector('.bookNowLink');
 const menuBookNow = document.querySelector('.book-now-drawer');
 const closeBookBtn = document.querySelector('.book-now-close-button');
+const menuBurgerBtn = document.querySelector('.hamburger-button');
 
 closeBookBtn.addEventListener('click', function() {
     menuBookNow.classList.remove('show');
 
     if(menuBookNow.classList.display = 'none') {
         bookNowLink.style.visibility = 'visible';
+        menuBurgerBtn.style.visibility = 'visible';
     }
 
 });
@@ -41,7 +43,8 @@ bookBtn.addEventListener('click', function() {
 
        if(menuBookNow.classList.contains('show')) {
           bookNowLink.style.visibility = 'hidden';
-       }    
+          menuBurgerBtn.style.visibility = 'hidden';
+       }  
 
 });
 
